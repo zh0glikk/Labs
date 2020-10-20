@@ -32,7 +32,8 @@ public class TripTest {
                 "Hotel: Hilton\n" +
                 "Arrival date: 10.12.2020\n" +
                 "Depature date: 22.12.2020\n" +
-                "Price for 1 day: 100$";
+                "Price for 1 day: 100$\n" +
+                "Whole trip price: 1200$";
         assertEquals(result, trip.toString());
     }
 

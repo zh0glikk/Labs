@@ -72,7 +72,8 @@ public class Trip {
         result += "Hotel: " + this.hotelName + "\n";
         result += "Arrival date: " + this.arrivalDate + "\n";
         result += "Depature date: " + this.depatureDate + "\n";
-        result += "Price for 1 day: " + this.price + "$";
+        result += "Price for 1 day: " + this.price + "$\n";
+        result += "Whole trip price: " + this.countTripPrice() + "$";
 
         return result;
     }
