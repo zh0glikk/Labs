@@ -2,6 +2,7 @@ package Date;
 
 import Exceptions.InvalidDate;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Date {
     private int day;
@@ -81,6 +82,11 @@ public class Date {
 
         validate();
     }
+
+    public Date() throws InvalidDate {
+        this(1, 1, 1970);
+    }
+
 
     public int getDay() { return this.day; }
 
@@ -181,6 +187,20 @@ public class Date {
         return days;
     }
 
+    public void setDay(int day) throws InvalidDate {
+        this.day = day;
+        validate();
+    }
+
+    public void setMonth(int month) throws InvalidDate {
+        this.month = month;
+        validate();
+    }
+
+    public void setYear(int year) throws InvalidDate {
+        this.year = year;
+        validate();
+    }
 
     public String toString() { // приведение стринга к виду "dd.mm.yyyy"
         String result = new String();

@@ -87,6 +87,4 @@ public class DateTest {
         assertEquals("01.11.2001", date_1.countDateInSomeDays(-61).toString());
         assertEquals("31.12.2000", date_1.countDateInSomeDays(-365).toString());
     }
-
-
 }

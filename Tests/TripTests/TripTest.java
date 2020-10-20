@@ -24,4 +24,16 @@ public class TripTest {
 
         assertEquals(1200, trip.countTripPrice());
     }
+
+    @Test
+    public void printTrip() throws InvalidDate {
+        Trip trip = new Trip(new Date("10.12.2020"), new Date("22.12.2020"), "Kemer", "Hilton", 100);
+        String result = "City: Kemer\n" +
+                "Hotel: Hilton\n" +
+                "Arrival date: 10.12.2020\n" +
+                "Depature date: 22.12.2020\n" +
+                "Price for 1 day: 100$";
+        assertEquals(result, trip.toString());
+    }
+
 }
