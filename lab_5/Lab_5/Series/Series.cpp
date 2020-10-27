@@ -4,7 +4,7 @@ Series::Series(double first, double step, int size) :
     first(first),
     step(step),
     size(size)
-    {}
+    {} 
 
 Series::~Series() {
     std::cout << "Series::~Series()" << std::endl;
