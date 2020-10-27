@@ -11,7 +11,7 @@ Series::~Series() {
 }
 
 double Series::getElement(int index) {
-    int element = this->first * index;
+    double element = this->first * index;
     return element;
 }
 
